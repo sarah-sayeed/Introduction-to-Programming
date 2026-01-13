@@ -159,15 +159,6 @@ class VendingMachineApp:
                     width=5, height=2,
                     command=lambda v=val: self.add_money(v)
                 ).grid(row=r, column=c, padx=4, pady=4)
-
-        tk.Button(
-            keypad, text="CLEAR",
-            bg="#dc2626", fg="white",
-            font=("Arial",12,"bold"),
-            width=22,
-            command=lambda: self.code_entry.delete(0, tk.END)
-        ).grid(row=2, column=0, columnspan=4, pady=6)
-
         
         tk.Button(
             self.payment_panel, text="PUSH",
